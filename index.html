@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student GPA Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h2>Student Result & GPA Portal</h2>
+
+    <form id="form">
+        <input type="text" id="subject" placeholder="Subject Name" required>
+        <input type="number" id="marks" placeholder="Obtained Marks" required>
+        <input type="number" id="total" placeholder="Total Marks" required>
+        <button>Add Subject</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Total</th>
+            <th>%</th>
+            <th>Grade</th>
+            <th>GPA</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+
+    <h3 id="finalGpa">Overall GPA: 0.00</h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
